@@ -1,40 +1,132 @@
 <html>
+    <!-- Opening HTML tag -->
+     <!-- 
+        This is the opening HTML tag that marks the beginning of the HTML document. 
+    -->
 
 <head>
+    <!-- Opening head tag -->
+    <!-- 
+        The head section contains metadata and links to stylesheets and scripts that do not affect the visible content.
+    -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CSS file with integrity attribute for security -->
+    <!-- 
+        This link tag loads the Bootstrap CSS from a CDN (Content Delivery Network), enabling responsive design and styling. 
+        The integrity attribute is for verifying that the resource has not been tampered with.
+    -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+    <!-- jQuery script with integrity and crossorigin for secure loading -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
+    <!-- Popper.js script for tooltip and popover -->
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript file with integrity attribute -->
+    <!-- 
+        The script tags load jQuery, Popper.js, and Bootstrap JS, necessary for Bootstrap's JavaScript components to function correctly.
+    -->
 </head>
-
+    <!-- Closing head tag -->
+    <!-- 
+        The body section contains the content that will be displayed on the web page.
+    -->
+    <!-- 
+        The body section contains the content that will be displayed on the web page.
+    -->
 <body>
+    <!-- Opening body tag -->
+
     <div class="container">
+        <!-- Bootstrap container class -->
+        <!-- 
+            Bootstrap's container class provides a fixed-width responsive container for the contents of the page.
+        -->
         <br />
-        <a href="profileREPO.php"> <button type="button" class="btn btn-secondary">Voltar</button></a>
+        <!-- Line break -->
+
+        <a href="profileREPO.php">
+            <!-- Link to profileREPO.php -->
+            <!-- 
+                This is a link to the 'profileREPO.php' page. 
+                The <a> element creates a hyperlink.
+            -->
+            <button type="button" class="btn btn-secondary">Voltar</button>
+            <!-- Button to go back, styled with Bootstrap -->
+            <!-- 
+                This is a button styled with Bootstrap's 'btn btn-secondary' classes.
+                The button is for navigating back (Voltar).
+            -->
+        </a>
+
         <br />
+        <!-- Line break -->
+
         <br />
+        <!-- Line break -->
+        <!-- Line breaks for spacing. -->
         <form action="add_mstrepo.php" method="POST">
+            <!-- Form submission action to add_mstrepo.php with POST method -->
+            <!-- 
+                This form sends data to 'add_mstrepo.php' using the POST method. 
+                It has two input fields and a submit button.
+            -->
             <div class="form-group">
+                <!-- Bootstrap form-group class -->
+                <!-- 
+                    Bootstrap's 'form-group' class provides structure and spacing for form elements.
+                -->
                 <label for="exampleFormControlInput1">Titulo do projeto: </label>
+                <!-- Label for project title input -->
+                <!-- Label for the project title input field. -->
+
                 <input type="text" class="form-control" id="exampleFormControlInput1" name="title" placeholder="">
+                <!-- Text input for project title with form-control class -->
+                <!-- 
+                    Text input for the project title.
+                    The 'form-control' class applies Bootstrap styling.
+                -->
             </div>
+
             <div class="form-group">
+                <!-- Bootstrap form-group class -->
+                <!-- Another form-group div for organizing the content input. -->
+
                 <label for="exampleFormControlInput2">Conteudo do projeto: </label>
+                <!-- Label for project content input -->
+                <!-- Label for the project content input field. -->
+
                 <input type="text" class="form-contro2" id="exampleFormControlInput1" name="conteudo"
                     placeholder="CONTEUDO DE PROJETO a, b, c , d ,e">
+                <!-- Text input for project content with placeholder -->
+                <!-- 
+                    Text input for project content. It includes a placeholder suggesting example content.
+                -->
             </div>
+
             <input type="submit" class=" btn btn-secondary" value="editar"></input>
+            <!-- Submit button styled with Bootstrap -->
         </form>
+        <!-- Closing form tag -->
+        <!-- Submit button styled with Bootstrap's secondary button class, labeled 'editar'. -->
+        
 </body>
+    <!-- Closing body tag -->
 
 <br />
+    <!-- Line break -->
+<!-- Line break -->
 </div>
-
+    <!-- Closing div tag -->
+    <!-- Closing Bootstrap container div -->
 </html>
+<!-- The document ends with the closing HTML tag. -->
+    <!-- Closing HTML tag -->
