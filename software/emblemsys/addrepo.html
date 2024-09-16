@@ -1,40 +1,143 @@
 <html>
-
+    <!-- Opening tag for the HTML document -->
+    <!-- 
+        The <html> tag marks the start of the HTML document. It wraps all the content of the web page.
+        The document typically includes a <head> and <body> section.
+    -->
 <head>
+    <!-- Opening tag for the head section, which contains metadata and links to resources -->
+    <!-- 
+        The <head> section contains meta information, links to external resources like CSS and JavaScript, 
+        and other elements that are not displayed on the page but are crucial for functionality and styling.
+    -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Link to Bootstrap's CSS for styling with integrity check for security and crossorigin attribute for external resources -->
+    <!-- 
+        This link loads Bootstrap 4 CSS from a CDN (Content Delivery Network), providing predefined styling
+        like responsive grid layout, buttons, forms, etc. The 'integrity' attribute ensures the file hasn't been tampered with.
+        The 'crossorigin' attribute allows sharing resources across different origins securely.
+    -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
+    <!-- jQuery library for JavaScript functionality, loaded from a CDN with integrity check -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Popper.js library for positioning elements like tooltips, used by Bootstrap -->
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <!-- Bootstrap's JavaScript library for enabling interactive elements, like modals and dropdowns -->
+    <!-- 
+        These three <script> tags load jQuery, Popper.js, and Bootstrap's JavaScript components, respectively. 
+        jQuery is used for DOM manipulation, event handling, and animations.
+        Popper.js is a library needed for positioning elements (like tooltips).
+        Bootstrap's JS enables interactive components like modals, dropdowns, and tooltips.
+        Again, 'integrity' and 'crossorigin' attributes ensure secure and validated content loading.
+    -->
 </head>
+    <!-- Closing head tag -->
 
 <body>
+    <!-- Opening body tag, where the visible content of the webpage goes -->
+    <!-- 
+        The <body> section contains the visible content of the webpage. Everything inside this tag will be rendered on the screen.
+    -->
     <div class="container">
+        <!-- A Bootstrap container class to keep the content responsive and aligned -->
+        <!-- 
+            The 'container' class from Bootstrap wraps the main content in a responsive grid system. It automatically 
+            adjusts the layout for different screen sizes, providing a consistent and well-structured design.
+        -->
         <br />
-        <a href="profileREPO.php"> <button type="button" class="btn btn-secondary">Voltar</button></a>
+        <!-- Line break for spacing -->
+
+        <a href="profileREPO.php">
+            <!-- Anchor link pointing to profileREPO.php -->
+            <!-- 
+                The <a> tag creates a hyperlink to 'profileREPO.php'. This allows the user to navigate back to the profile repository page.
+            -->
+            <button type="button" class="btn btn-secondary">Voltar</button>
+            <!-- Button that redirects to profileREPO.php, styled with Bootstrap's secondary button class -->
+            <!-- 
+                This button, styled with Bootstrap's 'btn' and 'btn-secondary' classes, is a clickable element
+                that says 'Voltar' (meaning 'Back'). Clicking it will take the user to the 'profileREPO.php' page.
+            -->
+        </a>
+
         <br />
+        <!-- Line break for spacing -->
+
         <br />
+        <!-- Another line break for more spacing -->
+
         <form action="add_repo.php" method="POST">
+            <!-- Form element that submits data to add_repo.php using POST method -->
+            <!-- 
+                This <form> tag sends user input to 'add_repo.php' when submitted. 
+                The 'POST' method ensures the data is sent securely and not visible in the URL. 
+                Forms allow users to input data and perform actions on a web page.
+            -->
             <div class="form-group">
+                <!-- Bootstrap's form-group class for proper form structure -->
+                <!-- 
+                    The 'form-group' class from Bootstrap is used to wrap form elements, 
+                    ensuring proper spacing and alignment within the form.
+                -->
                 <label for="exampleFormControlInput1">Titulo do projeto: </label>
+                <!-- Label for the project title input field -->
+                <!-- 
+                    This <label> is associated with the input field for the project title. 
+                    The 'for' attribute links the label to the input element with a matching 'id', 
+                    helping users understand what to input.
+                -->
                 <input type="text" class="form-control" id="exampleFormControlInput1" name="title" placeholder="">
+                <!-- Text input for the project title, styled with Bootstrap's form-control class -->
+                <!-- 
+                    This <input> field allows the user to enter the project title. 
+                    The 'form-control' class ensures it is styled according to Bootstrap's form styles.
+                    The 'name' attribute is the key that will be sent with the form's data (in this case, 'title').
+                    The 'placeholder' attribute gives a hint or example to the user of what to enter.
+                -->
             </div>
+
             <div class="form-group">
+                <!-- Another form-group for organizing the content input field -->
+
                 <label for="exampleFormControlInput1">Conteudo do projeto: </label>
+                <!-- Label for the project content input field -->
+
                 <input type="text" class="form-control" id="exampleFormControlInput1" name="conteudo"
                     placeholder="CONTEUDO DE PROJETO a, b, c , d ,e">
+                <!-- Text input for the project content, with a placeholder suggesting example content -->
+                <!-- 
+                    Another text input field, but this one is for the project's content.
+                    It includes a placeholder with an example of the kind of content the user should input.
+                -->
             </div>
-            <input type="submit" class=" btn btn-secondary" value="editar"></input>
+
+            <input type="submit" class="btn btn-secondary" value="editar">
+            <!-- Submit button that sends the form data, styled as a secondary Bootstrap button, labeled "editar" -->
+            <!-- 
+                This submit button triggers the form submission. When clicked, the form data is sent to 'add_repo.php'.
+                The button is styled using Bootstrap classes and labeled 'editar' (meaning 'edit' or 'submit').
+            -->
         </form>
+        <!-- Closing form tag -->
 </body>
+    <!-- Closing body tag -->
 
 <br />
-</div>
+    <!-- Line break for spacing -->
 
+</div>
+    <!-- Closing div container tag -->
+    <!-- 
+    Closing the Bootstrap 'container' div that holds all the form elements and navigation button.
+    This container helps in maintaining a structured layout.
+-->
 </html>
+    <!-- Closing HTML document tag -->
